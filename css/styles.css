@@ -46,13 +46,16 @@ img {
 /* section padding */
 
 .hero-section {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 188px;
   padding-bottom: 188px;
 
   background-image: var(--l-gra), url(../images/people-office\ 1.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  block-size: cover;
+background-size: cover;
 }
 .feature-section {
   padding: 120px 0;
@@ -201,7 +204,7 @@ body {
 
 .feauter-item-box {
   display: block;
-  width: 256px;
+  width: 264px;
   height: 112px;
   margin-bottom: 8px;
 
@@ -312,6 +315,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding-bottom: 8px;
+  color: var(--primary-text-color);
 }
 .our-team-list {
   background-color: var(--hero-color);
@@ -419,7 +423,8 @@ body {
   column-gap: 24px;
   row-gap: 48px;
 }
-.card-set:is(:hover, :focus) {
+.card-set-link{display: block;}
+.card-set-link:is(:hover, :focus){
   box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
     0 2px 1px rgba(46, 47, 66, 0.08);
 }
