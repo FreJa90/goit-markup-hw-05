@@ -55,7 +55,7 @@ img {
   background-image: var(--l-gra), url(../images/people-office\ 1.jpg);
   background-repeat: no-repeat;
   background-position: center;
-background-size: cover;
+  background-size: cover;
 }
 .feature-section {
   padding: 120px 0;
@@ -203,7 +203,9 @@ body {
 }
 
 .feauter-item-box {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 264px;
   height: 112px;
   margin-bottom: 8px;
@@ -211,9 +213,9 @@ body {
   background-color: var(--second-accent-color);
   border-radius: 4px;
 }
-.feature-icon {
+/* .feature-icon {
   padding: 24px 100px;
-}
+} */
 .our-team,
 .doing {
   display: flex;
@@ -314,7 +316,7 @@ body {
 .our-team-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   color: var(--primary-text-color);
 }
 .our-team-list {
@@ -374,11 +376,13 @@ body {
 /* Footer media */
 .f-soc-logo {
   display: flex;
+  align-items: baseline;
 }
 
 .f-soc-title {
   font-weight: 500;
-  color: var(--hero-color);
+  font-style: medium;
+  color: rgba(255, 255, 255, 1);
   line-height: 1.5;
   margin-bottom: 16px;
 }
@@ -423,8 +427,10 @@ body {
   column-gap: 24px;
   row-gap: 48px;
 }
-.card-set-link{display: block;}
-.card-set-link:is(:hover, :focus){
+.card-set-link {
+  display: block;
+}
+.card-set-link:is(:hover, :focus) {
   box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
     0 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -461,7 +467,7 @@ body {
 
 .custom-item {
   height: 88px;
-  width: 164px;
+  width: 168px;
 }
 
 .custom-link {
